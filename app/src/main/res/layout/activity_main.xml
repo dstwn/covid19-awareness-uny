@@ -9,23 +9,32 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:layout_height="200dp">
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/colll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="?attr/colorPrimary"
+            app:contentScrim="@color/colorPrimaryDark"
             app:expandedTitleGravity="center"
+            android:background="@drawable/bg"
+            style="@style/AppTheme.AppBarOverlay"
+            android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
+                app:titleTextColor="#ffffffff"
+                app:title="COVID-19 Awareness UNY"
+                android:background="@drawable/bg"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="160dp"
                 app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.cardview.widget.CardView
+        android:id="@+id/stats"
         app:cardElevation="20dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -33,7 +42,87 @@
         app:cardCornerRadius="10dp"
         app:cardBackgroundColor="#ffffffff"
         app:layout_anchor="@+id/colll"
-        app:layout_anchorGravity="bottom|center" />
+        app:layout_anchorGravity="bottom|center" >
+                <LinearLayout
+                    android:gravity="center"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_intruksi"
+                            android:id="@+id/btnIntruksi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Button 1" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Intruksi" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_daring"
+                            android:id="@+id/btnDaring"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Button 1" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Kuliah Online"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_news"
+                            android:id="@+id/btnNews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Button 1" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Informasi" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+    </androidx.cardview.widget.CardView>
     <include layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import id.infiniteuny.covid.ProtocolView
+import com.bumptech.glide.Glide
 import id.infiniteuny.covid.R
 import kotlinx.android.synthetic.main.item_protocol.view.*
 
@@ -25,6 +25,7 @@ class ProtokolAdapter(val data: List<DataItem>, private var context : Context) :
             itemView.title.text =  get?.title
             itemView.desc.text = get?.description
             itemView.filePdf.text = get?.fileUrl
+            Glide.with(itemView).load(get?.imageUrl).into(itemView.imageView2)
             itemView.setOnClickListener{
                 context.startActivity(Intent(context, ProtocolView::class.java).apply {
                     putExtra("PROT", get)

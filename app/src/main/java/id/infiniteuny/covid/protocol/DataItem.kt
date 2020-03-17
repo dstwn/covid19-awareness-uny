@@ -7,6 +7,8 @@ import com.google.gson.annotations.SerializedName
 
 @Generated("com.robohorse.robopojogenerator")
 data class DataItem(
+    @field:SerializedName("image_url")
+    val imageUrl: String? = null,
 
     @field:SerializedName("file_url")
     val fileUrl: String? = null,
@@ -40,12 +42,14 @@ data class DataItem(
         source.readString(),
         source.readString(),
         source.readString(),
+        source.readString(),
         source.readString()
     )
 
     override fun describeContents() = 0
 
     override fun writeToParcel(dest: Parcel, flags: Int) = with(dest) {
+        writeString(imageUrl)
         writeString(fileUrl)
         writeString(updatedAt)
         writeString(updatedBy)

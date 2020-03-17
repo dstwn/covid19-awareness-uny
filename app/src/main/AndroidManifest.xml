@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.infiniteuny.covid">
+    package="id.infiniteuny.covid" >
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_rounded"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ProtocolView"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        android:theme="@style/AppTheme" >
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"
+            android:name=".DaringView" >
+        </activity>
+        <activity
+            android:name=".news.DetailNews"
+            android:parentActivityName=".news.NewsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".news.NewsView"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".info.InfoView"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".protocol.ProtocolView"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -22,7 +40,7 @@
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

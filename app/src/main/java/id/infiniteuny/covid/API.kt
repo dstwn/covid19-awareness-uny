@@ -1,6 +1,8 @@
 package id.infiniteuny.covid
 
 import id.infiniteuny.covid.covid.Covid19StatsItem
+import id.infiniteuny.covid.info.ResponseInfo
+import id.infiniteuny.covid.news.ResponseNews
 import id.infiniteuny.covid.protocol.DataItem
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -25,15 +27,18 @@ class API {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-    fun getService() = getRetrofit().create(Protokol::class.java)
+    fun getService() = getRetrofit().create(Aipiai::class.java)
 }
-    interface Protokol {
+    interface Aipiai {
         @GET("protocol/all/")
         fun getProtokol() : Call<List<DataItem>>
+
+        @GET("info/all/")
+        fun getInfo() : Call<List<ResponseInfo>>
+
+        @GET("news/all/")
+        fun getNews() : Call<List<ResponseNews>>
     }
-    interface  Covid {
-        @GET("covid/")
-        fun getCovid() : Call<List<Covid19StatsItem>>
-    }
+
 
 

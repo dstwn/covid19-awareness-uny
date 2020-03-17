@@ -1,5 +1,6 @@
 package id.infiniteuny.covid
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
@@ -7,6 +8,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import id.infiniteuny.covid.info.InfoView
+import id.infiniteuny.covid.news.NewsView
 import id.infiniteuny.covid.protocol.DataItem
 import id.infiniteuny.covid.protocol.ProtokolAdapter
 
@@ -26,6 +29,15 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = ProtokolAdapter(datalist, this@MainActivity)
         recyclerView.layoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL,false)
         getData()
+        btnIntruksi.setOnClickListener {
+            startActivity(Intent(this, InfoView::class.java))
+        }
+        btnNews.setOnClickListener {
+            startActivity(Intent(this, NewsView::class.java))
+        }
+        btnDaring.setOnClickListener {
+            startActivity(Intent(this, DaringView::class.java))
+        }
 
     }
     private fun getData(){
