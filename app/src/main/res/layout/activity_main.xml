@@ -21,7 +21,7 @@
             app:contentScrim="@color/colorPrimaryDark"
             style="@style/AppTheme.AppBarOverlay">
             <ImageView
-                android:foreground="#8D3700B3"
+                android:foreground="#C13700B3"
                 android:scaleType="centerCrop"
                 android:src="@drawable/bg"
                 android:layout_width="match_parent"
@@ -61,7 +61,7 @@
             app:cardBackgroundColor="#ffffffff" >
             <GridLayout
                 android:layout_margin="10dp"
-                android:columnCount="3"
+                android:columnCount="4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <LinearLayout
@@ -191,6 +191,48 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hotline" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_portal"
+                        android:id="@+id/btnSigap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button 1" />
+                    <TextView
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Portal \nSigap" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_statistic"
+                        android:id="@+id/btnStatistik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button 1" />
+                    <TextView
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Statistik" />
                 </LinearLayout>
             </GridLayout>
         </androidx.cardview.widget.CardView>
