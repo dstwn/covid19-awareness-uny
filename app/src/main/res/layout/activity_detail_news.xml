@@ -52,13 +52,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="10sp"
-        app:cardElevation="20dp"
+        app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
-        <WebView
-            android:id="@+id/webNews"
+        <ScrollView
+            android:scrollbars="none"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textNews"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </ScrollView>
+
+
     </androidx.cardview.widget.CardView>
 
 

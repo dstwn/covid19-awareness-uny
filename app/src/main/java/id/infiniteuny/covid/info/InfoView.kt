@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import id.infiniteuny.covid.API
 import id.infiniteuny.covid.R
 import kotlinx.android.synthetic.main.activity_main.toolbar
@@ -23,9 +24,8 @@ class InfoView : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         recyclerView = findViewById(R.id.rv_info)
         recyclerView.adapter = InfoAdapter(datainfo, this@InfoView)
-        recyclerView.layoutManager =LinearLayoutManager(this@InfoView, LinearLayoutManager.VERTICAL,false)
+        recyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         getDatas()
-
     }
 
     private fun getDatas() {

@@ -7,16 +7,12 @@
     android:background="#ffffffff"
     tools:context=".SplashActivity">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="184dp"
-        android:src="@drawable/ic_logo"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/icon_shield_rev"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +29,7 @@
         android:keepScreenOn="true"
         android:text="COVID-19 Awareness UNY"
         android:textColor="#ff000000"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,17 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.029" />
 
-    <ProgressBar
-        android:progressBackgroundTint="@color/colorPrimaryDark"
-        android:progressBackgroundTintMode="src_over"
-        android:progressTint="@color/colorPrimaryDark"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"

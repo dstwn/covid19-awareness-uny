@@ -24,7 +24,7 @@ class DetailNews : AppCompatActivity() {
     private fun fillView() {
         Glide.with(this).load(getNews().imageUrl).into(nImage)
         nTitle!!.setText(getNews().title)
-
-        webNews.loadData(getNews().news, "text/html","utf-8")
+        textNews!!.setText(getNews().news)
+//        webNews.loadData(getNews().news, "text/html","utf-8")
     }
 }
