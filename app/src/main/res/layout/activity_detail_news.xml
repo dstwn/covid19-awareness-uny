@@ -35,14 +35,14 @@
                 />
             <TextView
                 android:textStyle="bold"
-                android:textSize="24sp"
+                android:textSize="21sp"
                 android:textColor="#ffffffff"
-                android:layout_margin="22dp"
-                android:gravity="bottom"
-                android:text="fkyufyufkyufyuofuyoufoyofosydfysoydfs"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20sp"
+                android:text="fkyufyufkyufyuofuyoufoyofosydfysoydfsvfkyufyufkyufyuofuyoufoyofosydfysoydfs"
                 android:id="@+id/nTitle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 tools:ignore="MissingConstraints" />
         </com.google.android.material.appbar.AppBarLayout>
     </RelativeLayout>
@@ -55,10 +55,12 @@
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
         <ScrollView
+            android:paddingBottom="20dp"
             android:scrollbars="none"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
+                android:paddingBottom="20dp"
                 android:id="@+id/textNews"
                 android:layout_margin="20dp"
                 android:layout_width="match_parent"
