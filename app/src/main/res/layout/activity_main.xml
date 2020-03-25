@@ -83,7 +83,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Intruksi" />
+                        android:text="Instruksi" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_margin="10dp"
