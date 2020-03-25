@@ -46,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:text="Protokol Kesejjshdklfsh"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="21sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
