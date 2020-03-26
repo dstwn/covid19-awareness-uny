@@ -11,8 +11,8 @@ android {
         applicationId "id.infiniteuny.c3"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -54,7 +54,7 @@ ext {
 
     androidxDeps = [
             appCompat       : 'androidx.appcompat:appcompat:' + versions.appCompat,
-            material        : 'com.google.android.material:material:1.1.0-alpha01',
+            material        : 'com.google.android.material:material:1.2.0-alpha05',
             constraintlayout: 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2',
             workManager     : 'android.arch.work:work-runtime:1.0.0-alpha12'
     ]

@@ -35,6 +35,7 @@ class CovidView : AppCompatActivity() {
                         txtCases.text = data?.cases.toString()
                         txtDeaths.text = data?.deaths.toString()
                         txtRecovered.text = data?.recovered.toString()
+                        txtTodayCases.text = data?.todayCases.toString()
                         Log.d("tag","data cases = ${data?.cases}")
                 }
             }

@@ -12,57 +12,58 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".SelfCheckView"></activity>
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
-            android:name="id.infiniteuny.c3.covid.CovidView"></activity>
-        <activity
-            android:name="id.infiniteuny.c3.sigap.SigapView"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".covid.CovidView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.activity.SliderView"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".sigap.SigapView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.maps.MapsView"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".activity.SliderView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.hotline.HotlineView"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".maps.MapsView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.protocol.ProtokolList"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".hotline.HotlineView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.DaringView"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".protocol.ProtokolList"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.news.DetailNews"
-            android:parentActivityName="id.infiniteuny.c3.news.NewsView"
+            android:name=".DaringView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.news.NewsView"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".news.DetailNews"
+            android:parentActivityName=".news.NewsView"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.info.InfoView"
-            android:parentActivityName="id.infiniteuny.c3.MainActivity"
+            android:name=".news.NewsView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.protocol.ProtocolView"
-            android:parentActivityName="id.infiniteuny.c3.protocol.ProtokolList"
+            android:name=".info.InfoView"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.MainActivity"
+            android:name=".protocol.ProtocolView"
+            android:parentActivityName=".protocol.ProtokolList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="id.infiniteuny.c3.SplashActivity"
+            android:name=".SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

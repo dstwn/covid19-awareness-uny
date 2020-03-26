@@ -39,6 +39,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun Menus() {
+        selfCheck.setOnClickListener {
+            startActivity(Intent(this,SelfCheckView::class.java))
+        }
         btnIntruksi.setOnClickListener {
             startActivity(Intent(this, InfoView::class.java))
         }
