@@ -12,27 +12,28 @@
         android:translationZ="1dp"
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#90CAF9"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_height="250dp">
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/colll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="@color/colorPrimaryDark"
             style="@style/AppTheme.AppBarOverlay">
             <ImageView
-                android:foreground="#C13700B3"
-                android:scaleType="centerCrop"
-                android:src="@drawable/bg"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_marginTop="40dp"
+                android:layout_gravity="top|right"
+                android:src="@drawable/bg_ilust"
+                android:scaleType="centerInside"
+                android:layout_width="190dp"
+                android:layout_height="180dp"/>
             <TextView
                 android:layout_marginTop="100dp"
                 android:layout_marginStart="20dp"
                 android:textStyle="bold"
-                android:textSize="24sp"
-                android:textColor="#ffffffff"
-                android:text="COVID-19 Awareness UNY"
+                android:textSize="28sp"
+                android:textColor="#ff000000"
+                android:text="COVA UNY"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <androidx.appcompat.widget.Toolbar
@@ -46,6 +47,7 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <FrameLayout
+        android:layout_marginTop="20dp"
         android:translationZ="10dp"
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="bottom|center"
@@ -211,7 +213,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Portal \nSigap" />
+                        android:text="Portal\nSigap" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_margin="10dp"

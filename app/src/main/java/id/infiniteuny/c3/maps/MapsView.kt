@@ -15,6 +15,6 @@ class MapsView : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         webMaps.settings.javaScriptEnabled = true
-        webMaps.loadUrl("http://cont.covid19.infiniteuny.id/maps.html")
+        webMaps.loadUrl("https://www.bing.com/covid/local/indonesia")
     }
 }

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "766970490532",
+    "firebase_url": "https://covid-19-awarness-uny.firebaseio.com",
+    "project_id": "covid-19-awarness-uny",
+    "storage_bucket": "covid-19-awarness-uny.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766970490532:android:09a3eb93d1dace32598031",
+        "android_client_info": {
+          "package_name": "id.infiniteuny.c3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766970490532-fd2d72ce899nmhouunfnfvugov0ruphq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.infiniteuny.c3",
+            "certificate_hash": "9467a7f3dd326cb3ca9f1441dab70c006fa2d671"
+          }
+        },
+        {
+          "client_id": "766970490532-g3ikcjuq0a3vb5g4ja1l5gu1c64ajlog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdq3sE4BViEK5KFLjEAD6U_Y-3HbCuGG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766970490532-g3ikcjuq0a3vb5g4ja1l5gu1c64ajlog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
